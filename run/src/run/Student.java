@@ -11,7 +11,7 @@ package run;
  */
 public class Student {  //学生类
     public String name;
-    public String xuehao;
+    public String student_id;
     public String code;
     public String time;  //入学年份
     public String major; //专业

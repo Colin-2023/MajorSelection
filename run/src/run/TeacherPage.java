@@ -184,7 +184,7 @@ public class TeacherPage extends Page {  //老师界面的类
             while(res2.next())
             {
                 stu[i].name=res2.getString("name");
-                stu[i].xuehao=res2.getString("xuehao");
+                stu[i].student_id=res2.getString("student_id");
                 stu[i].code=res2.getString("code");
                 stu[i].time=res2.getString("time");
                 stu[i].major=res2.getString("major");
@@ -205,7 +205,7 @@ public class TeacherPage extends Page {  //老师界面的类
                     if(Double.valueOf(stu[j].jidian) < Double.valueOf(stu[j+1].jidian))
                     {
                         stu1.name=stu[j].name;
-                        stu1.xuehao=stu[j].xuehao;
+                        stu1.student_id=stu[j].student_id;
                         stu1.code=stu[j].code;
                         stu1.time=stu[j].time;
                         stu1.major=stu[j].major;
@@ -218,7 +218,7 @@ public class TeacherPage extends Page {  //老师界面的类
                         stu1.jidian=stu[j].jidian;
                        
                         stu[j].name=stu[j+1].name;
-                        stu[j].xuehao=stu[j+1].xuehao;
+                        stu[j].student_id=stu[j+1].student_id;
                         stu[j].code=stu[j+1].code;
                         stu[j].time=stu[j+1].time;
                         stu[j].major=stu[j+1].major;
@@ -231,7 +231,7 @@ public class TeacherPage extends Page {  //老师界面的类
                         stu[j].jidian=stu[j+1].jidian;
                   
                         stu[j+1].name=stu1.name;
-                        stu[j+1].xuehao=stu1.xuehao;
+                        stu[j+1].student_id=stu1.student_id;
                         stu[j+1].code=stu1.code;
                         stu[j+1].time=stu1.time;
                         stu[j+1].major=stu1.major;
@@ -782,7 +782,7 @@ public class TeacherPage extends Page {  //老师界面的类
                 while(res.next())
                 {                        
                     s.name = res.getString("name");
-                    s.xuehao = res.getString("xuehao");
+                    s.student_id = res.getString("student_id");
                     s.time = res.getString("time");
                     s.major = res.getString("major");
                     s.class0= res.getString("class");  
@@ -794,7 +794,7 @@ public class TeacherPage extends Page {  //老师界面的类
                         // 第四步，创建单元格，并设置值 
                         row.createCell((short) 0).setCellValue(i+1);
                         row.createCell((short) 1).setCellValue(s.name);  
-                        row.createCell((short) 2).setCellValue(s.xuehao);  
+                        row.createCell((short) 2).setCellValue(s.student_id);  
                         row.createCell((short) 3).setCellValue(s.time); 
                         row.createCell((short) 4).setCellValue(s.major);  
                         row.createCell((short) 5).setCellValue(s.class0);  
@@ -876,7 +876,7 @@ public class TeacherPage extends Page {  //老师界面的类
         con=con1.getConnection();
         try
         {          
-            sql=con.prepareStatement("select * from school.teacher where zhigonghao like ?");  
+            sql=con.prepareStatement("select * from school.teacher where teacher_id like ?");  
             sql.setString(1, HomePage2.input1);    //显示对应职工号的学生信息
             res=sql.executeQuery();           
             //遍历查询结果
@@ -884,7 +884,7 @@ public class TeacherPage extends Page {  //老师界面的类
             {               
                 //将数据从数据库中导出来                                              
                 t1.name = res.getString("name");
-                t1.zhigonghao = res.getString("zhigonghao");
+                t1.teacher_id = res.getString("teacher_id");
                 
                 
                 jl7.setText(t1.name);
@@ -893,7 +893,7 @@ public class TeacherPage extends Page {  //老师界面的类
                 c.add(jl7);
                 
                 
-                jl8.setText(t1.zhigonghao);
+                jl8.setText(t1.teacher_id);
                 jl8.setFont(new Font("黑体",  2,  23));
                 jl8.setBounds(400,175,150,50);
                 c.add(jl8);

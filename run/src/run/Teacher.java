@@ -11,6 +11,6 @@ package run;
  */
 public class Teacher {//老师类
     public String name;
-    public String zhigonghao;
+    public String teacher_id;
     public String code;
 }

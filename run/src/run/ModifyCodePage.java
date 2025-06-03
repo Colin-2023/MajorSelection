@@ -142,7 +142,7 @@ public class ModifyCodePage extends Page {  //修改密码的页面类
                 con=con1.getConnection();
                 try
                 {          
-                    sql=con.prepareStatement("update school.student set code = ?  where xuehao like ?");
+                    sql=con.prepareStatement("update school.student set code = ?  where student_id like ?");
                     sql.setString(1, StudentPage.s1.code);
                     sql.setString(2, HomePage2.input1);
                     sql.executeUpdate();
@@ -181,7 +181,7 @@ public class ModifyCodePage extends Page {  //修改密码的页面类
                 con=con1.getConnection();
                 try
                 {          
-                    sql=con.prepareStatement("update school.teacher set code = ?  where zhigonghao like ?");
+                    sql=con.prepareStatement("update school.teacher set code = ?  where teacher_id like ?");
                     sql.setString(1, TeacherPage.t1.code);
                     sql.setString(2, HomePage2.input1);
                     sql.executeUpdate();

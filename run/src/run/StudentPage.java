@@ -159,7 +159,7 @@ public class StudentPage extends Page{  //学生界面的类
         con=con1.getConnection();
         try
         {          
-            sql=con.prepareStatement("select * from school.student where xuehao like ?");  
+            sql=con.prepareStatement("select * from school.student where student_id like ?");  
             sql.setString(1, HomePage2.input1);    //显示对应学号的学生信息
             res=sql.executeQuery();           
             //遍历查询结果
@@ -167,7 +167,7 @@ public class StudentPage extends Page{  //学生界面的类
             {               
                 //将数据从数据库中导出来                                              
                 s1.name = res.getString("name");
-                s1.xuehao = res.getString("xuehao");
+                s1.student_id = res.getString("student_id");
                 s1.time = res.getString("time");
                 s1.major = res.getString("major");
                 s1.class0= res.getString("class");
@@ -179,7 +179,7 @@ public class StudentPage extends Page{  //学生界面的类
                 c.add(jl8);
                 
                 
-                jl9.setText(s1.xuehao);
+                jl9.setText(s1.student_id);
                 jl9.setFont(new Font("黑体",  2,  23));
                 jl9.setBounds(390,175,150,50);
                 c.add(jl9);

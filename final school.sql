@@ -51,7 +51,7 @@ DROP TABLE IF EXISTS `student`;
 CREATE TABLE `student` (
   `id` int NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `xuehao` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `student_id` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `code` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `time` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `major` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE `student` (
   `class` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `jidian` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '绩点',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `xuehao_UNIQUE` (`xuehao`)
+  UNIQUE KEY `student_id_UNIQUE` (`student_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -87,7 +87,7 @@ DROP TABLE IF EXISTS `teacher`;
 CREATE TABLE `teacher` (
   `id` int NOT NULL,
   `name` varchar(45) DEFAULT NULL,
-  `zhigonghao` varchar(45) DEFAULT NULL,
+  `teacher_id` varchar(45) DEFAULT NULL,
   `code` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

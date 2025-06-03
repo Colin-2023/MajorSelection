@@ -186,7 +186,7 @@ public class SearchStudent extends Page{ //老师查找单个学生分流的窗�
             {               
                 //将数据从数据库中导出来                                              
                 s1.name = res.getString("name");
-                s1.xuehao = res.getString("xuehao");
+                s1.student_id = res.getString("student_id");
                 s1.time = res.getString("time");
                 s1.major = res.getString("major");
                 s1.class0= res.getString("class");                                
@@ -204,7 +204,7 @@ public class SearchStudent extends Page{ //老师查找单个学生分流的窗�
         c2.add(jl8);
                 
                 
-        jl9.setText(s1.xuehao);
+        jl9.setText(s1.student_id);
         jl9.setFont(new Font("黑体",  2,  23));
         jl9.setBounds(390,175,150,50);
         c2.add(jl9);

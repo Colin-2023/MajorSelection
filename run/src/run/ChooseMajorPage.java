@@ -402,27 +402,27 @@ public class ChooseMajorPage extends Page{  //选择专业的页面类
                     
                     try
                     {          
-                        sql=con.prepareStatement("update school.student set choose1 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose1 = ?  where student_id like ?");
                         sql.setString(1, StudentPage.s1.choose1);
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                     
-                        sql=con.prepareStatement("update school.student set choose2 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose2 = ?  where student_id like ?");
                         sql.setString(1, "");
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                     
-                        sql=con.prepareStatement("update school.student set choose3 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose3 = ?  where student_id like ?");
                         sql.setString(1, "");
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                     
-                        sql=con.prepareStatement("update school.student set choose4 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose4 = ?  where student_id like ?");
                         sql.setString(1, "");
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                     
-                        sql=con.prepareStatement("update school.student set choose5 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose5 = ?  where student_id like ?");
                         sql.setString(1, "");
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
@@ -456,27 +456,27 @@ public class ChooseMajorPage extends Page{  //选择专业的页面类
                     
                     try
                     {          
-                        sql=con.prepareStatement("update school.student set choose1 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose1 = ?  where student_id like ?");
                         sql.setString(1, StudentPage.s1.choose1);
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                     
-                        sql=con.prepareStatement("update school.student set choose2 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose2 = ?  where student_id like ?");
                         sql.setString(1, StudentPage.s1.choose2);
                         sql.setString(2, HomePage2.input1);
                         sql.executeUpdate();
                         
-                        sql=con.prepareStatement("update school.student set choose3 = ?  where xuehao like ?");
+                        sql=con.prepareStatement("update school.student set choose3 = ?  where student_id like ?");
                     sql.setString(1, "");
                     sql.setString(2, HomePage2.input1);
                     sql.executeUpdate();
                     
-                    sql=con.prepareStatement("update school.student set choose4 = ?  where xuehao like ?");
+                    sql=con.prepareStatement("update school.student set choose4 = ?  where student_id like ?");
                     sql.setString(1, "");
                     sql.setString(2, HomePage2.input1);
                     sql.executeUpdate();
                     
-                    sql=con.prepareStatement("update school.student set choose5 = ?  where xuehao like ?");
+                    sql=con.prepareStatement("update school.student set choose5 = ?  where student_id like ?");
                     sql.setString(1, "");
                     sql.setString(2, HomePage2.input1);
                     sql.executeUpdate();
@@ -517,27 +517,27 @@ public class ChooseMajorPage extends Page{  //选择专业的页面类
                         StudentPage.s1.choose3=(String) comboBox3.getSelectedItem();                    
                         try
                         {          
-                            sql=con.prepareStatement("update school.student set choose1 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose1 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose1);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose2 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose2 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose2);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose3 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose3 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose3);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose4 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose4 = ?  where student_id like ?");
                             sql.setString(1, "");
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose5 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose5 = ?  where student_id like ?");
                             sql.setString(1, "");
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();                                      
@@ -578,27 +578,27 @@ public class ChooseMajorPage extends Page{  //选择专业的页面类
                     
                         try
                         {          
-                            sql=con.prepareStatement("update school.student set choose1 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose1 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose1);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose2 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose2 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose2);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose3 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose3 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose3);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose4 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose4 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose4);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose5 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose5 = ?  where student_id like ?");
                             sql.setString(1, "");
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();                                       
@@ -641,27 +641,27 @@ public class ChooseMajorPage extends Page{  //选择专业的页面类
                         StudentPage.s1.choose5=(String) comboBox5.getSelectedItem();
                         try
                         {          
-                            sql=con.prepareStatement("update school.student set choose1 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose1 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose1);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose2 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose2 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose2);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose3 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose3 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose3);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose4 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose4 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose4);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();
                     
-                            sql=con.prepareStatement("update school.student set choose5 = ?  where xuehao like ?");
+                            sql=con.prepareStatement("update school.student set choose5 = ?  where student_id like ?");
                             sql.setString(1, StudentPage.s1.choose5);
                             sql.setString(2, HomePage2.input1);
                             sql.executeUpdate();

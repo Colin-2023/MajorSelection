@@ -32,7 +32,7 @@ public class StudentFactory {
             {               
                 //将数据从数据库中导出来                                              
                 s1.name = res.getString("name");
-                s1.xuehao = res.getString("xuehao");
+                s1.student_id = res.getString("student_id");
                 s1.time = res.getString("time");
                 s1.major = res.getString("major");
                 s1.class0= res.getString("class");                
